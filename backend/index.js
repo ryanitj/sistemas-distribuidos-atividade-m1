@@ -1,5 +1,6 @@
 
 const { default: axios } = require('axios');
+const cors  = require('cors');
 const express = require('express');
 const app = express();
 const PORT = 3000;
@@ -23,6 +24,8 @@ const tmdb = axios.create({
     'Authorization': tmdbTokenApi,
     },
 });
+
+app.use(cors());
 
 app.get('/', (req, res) => {
   res.send('Olá, mundo! Esta é minha primeira aplicação Express.');
