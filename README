@@ -1,0 +1,7 @@
+Rodar dentro das duas pastas: npm install
+
+Iniciar a aplicação frontend com: npm run dev
+
+Iniciar a aplicação backend com: node index.js
+
+Acessar o frontend na url: localhost:5173
